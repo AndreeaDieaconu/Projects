@@ -1,0 +1,45 @@
+Andreea Loredana Dieaconu
+andreea.dieaconu@gmail.com
+
+Grupa 315 CA
+
+
+Tema 1 - Social Network
+
+
+	Am implementat clasele publice User, Network si Main in fisierele 
+User.java, Network.java respectiv Main.java.
+
+	Avand in vedere comentariile pe care le contin sursele si urmarind o 
+exprimare concentrata, clara, acest fisier prezinta concis ideea generala de 
+implementare.
+
+	Clasa User implementează un utilizator de retea. 
+Pentru variabile membru private(ID, nume) am creat gettere si settere. Pentru 
+prietenii utilizatorului am ales, ca structură de date ce contine obiecte de 
+tip User, sa folosesc un obiect de tipul ArrayList. Am ales sa suprascriu metoda 
+equals pentru a verifica daca utilizatorii coincid.
+
+	Clasa Network implementeaza o retea sociala, a carei instantiere este 
+permisa o singură data, motiv pentru care am folosit pattern-ul Singleton. Ea 
+implementeaza functionalitatile de bază ale unei retele sociale prin metodele de 
+adaugare, stergere a unui utilizator, adaugare/ stergere a unei relatii de 
+prietenie intre doi utilizatori,  afisare de informatii despre un utilizator/
+graful retelei de socializare, afisare a componentelor conexe ale grafului 
+retelei si afisare a gradului de socializare al comunitatii din care 
+face parte un utilizator. Pentru a reprezenta utilizatorii retelei am folosit 
+tot un obiect de tipul ArrayList. Pentru a mentine aceasta structura, cat si cea
+ a prietenilor utilizatorului, ordonata crescator dupa ID am folosit un obiect 
+de tip Comparator. Am decis ca sortarea sa se faca dupa operatiile de adaugare 
+a unui utilizator si de adaugarea a une relatii de prietenie, desi ar fi fost 
+mult mai eficient ca timp ca acest lucru sa se produca inainte de apelul 
+metodelor de afisarea.
+Metodele DFS() si BFS() implementeaza algoritmul de parcurgere in adancime, 
+respectiv in latime, conform indicatiilor din enuntul temei.
+
+	Clasa Main implementeaza efectiv centrul de executie al comenzilor, prin
+ apelarea metodelor specifice.
+
+	Avand in vedere claritatea si lizibilitatea codului, cat si eficienta 
+solutiei, am abordat un coding style usor de urmarit. Astfel a rezultat un cod 
+aerisit. Indentarea este adecvata, numele de variabile sunt sugestive.
